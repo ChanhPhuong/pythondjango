@@ -1,0 +1,426 @@
+
+{% extends "page/base.html" %}
+
+{%block content%}
+
+
+<section class="bread-crumb">
+    <span class="crumb-border"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 a-left">
+                <ul class="breadcrumb">
+                    <li class="home">
+                        <a itemprop="url" href="/"><span title="Trang chủ">Trang chủ</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+
+
+                    <li>
+                        <a itemprop="url" href="/danh-muc-tao-dau-tien" title="Danh mục tạo đầu tiên"><span
+                                itemprop="title">Danh mục tạo đầu tiên</span></a>
+                        <span class="mr_lr">&nbsp;/&nbsp;</span>
+                    </li>
+
+                    <li><strong><span>{{productdetails.name}}</span></strong>
+                    <li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product" itemscope itemtype="https://schema.org/Product">
+    <meta itemprop="category" content="Danh mục tạo đầu tiên">
+    <meta itemprop="url" content="//nd-noi-that.mysapo.net/san-pham-14">
+    <meta itemprop="name" content="Nội thất phòng ngủ ND01">
+    <meta itemprop="image"
+        content="http://bizweb.dktcdn.net/thumb/grande/100/369/704/products/28.jpg?v=1572418508650">
+    <meta itemprop="description"
+        content="Phòng ngủ có vai trò quan trọng đối với mỗi cá nhân để định hình cá tính và quan điểm sống của chủ nhân khi nghỉ ngơi mỗi ngày để lấy lại năng lượng mỗi ngày hứng khởi vừa có không gian nghiên cứu và sáng tạo cho học tập hay công việc của mình. Chính vì thế mà phòng ngủ được chú ý thiết kế đầy đủ tiện nghi và hiện đại cho sinh hoạt tiện nghi, và ngủ những giấc ngủ an lành.">
+    <div class="d-none hidden" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <div class="inventory_quantity hidden" itemscope itemtype="http://schema.org/ItemAvailability">
+            <span class="a-stock" itemprop="supersededBy">
+                Còn hàng
+            </span>
+        </div>
+        <link itemprop="availability" href="http://schema.org/InStock">
+        <meta itemprop="priceCurrency" content="VND">
+        <meta itemprop="price" content="2900000">
+        <meta itemprop="url" content="https://nd-noi-that.mysapo.net/san-pham-14">
+        <span itemprop="UnitPriceSpecification" itemscope itemtype="https://schema.org/Downpayment">
+            <meta itemprop="priceType" content="2900000">
+        </span>
+        <meta itemprop="priceValidUntil" content="2099-01-01">
+    </div>
+    <div class="d-none hidden" id="https://nd-noi-that.mysapo.net" itemprop="seller"
+        itemtype="http://schema.org/Organization" itemscope>
+        <meta itemprop="name" content="ND Nội Thất" />
+        <meta itemprop="url" content="https://nd-noi-that.mysapo.net" />
+        <meta itemprop="logo"
+            content="http://bizweb.dktcdn.net/100/369/704/themes/741072/assets/logo.png?1677115735837" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="details-product  clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sm-12">
+                    <form enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post"
+                        class="row form-width form-inline">
+                        <div class="product-detail-left product-images col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="rows">
+                                <div class="relative product-image-block ">
+                                    <div class="large-image">
+                                        <a onclick="return false;"
+                                            href="//bizweb.dktcdn.net/thumb/1024x1024/100/369/704/products/28.jpg?v=1572418508650"
+                                            class="large_image_url" data-rel="prettyPhoto[product-gallery]">
+
+                                            <img id="zoom_01" class="lazy img-responsive center-block"
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                data-src="{{productdetails.image.url}}"
+                                                alt="noi-that-phong-ngu-nd01" />
+                                        </a>
+                                        <div class="hidden">
+                                            <div class="item">
+                                                <a href="https://bizweb.dktcdn.net/100/369/704/products/27.jpg?v=1572418509497"
+                                                    data-image="https://bizweb.dktcdn.net/100/369/704/products/27.jpg?v=1572418509497"
+                                                    data-zoom-image="https://bizweb.dktcdn.net/100/369/704/products/27.jpg?v=1572418509497">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="gallery_01" class="owl-carousel owl-theme" data-lg-items="4"
+                                        data-md-items="4" data-sm-items="4" data-xs-items="3" data-margin="10"
+                                        data-nav="true">
+
+                                        <div class="item">
+                                            <a href="javascript:void(0);"
+                                                data-image="//bizweb.dktcdn.net/thumb/grande/100/369/704/products/28.jpg?v=1572418508650"
+                                                data-zoom-image="//bizweb.dktcdn.net/thumb/1024x1024/100/369/704/products/28.jpg?v=1572418508650">
+                                                <img src="{{productdetails.image.url}}"
+                                                    class="img-responsive" alt="noi-that-phong-ngu-nd01">
+                                            </a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="javascript:void(0);"
+                                                data-image="//bizweb.dktcdn.net/thumb/grande/100/369/704/products/27.jpg?v=1572418509497"
+                                                data-zoom-image="//bizweb.dktcdn.net/thumb/1024x1024/100/369/704/products/27.jpg?v=1572418509497">
+                                                <img src="{{productdetails.image.url}}"
+                                                    class="img-responsive" alt="noi-that-phong-ngu-nd01">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 details-pro">
+                            <div class="bg-inner clearfix">
+                                <h1 class="title-product" itemprop="name">{{productdetails.name}}</h1>
+                                <div class="group-status">
+                                    <span class="first_status"><span class="a_name">Thương hiệu:</span> <span
+                                            class="status_name">
+                                            Đang cập nhật
+                                        </span>
+                                        <span class="hidden-xs">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                    </span>
+                                    <span class="inventory_quantity"><span class="a_name">Số lượng sản phẩm:</span>
+                                        <span class="status_name availabel">
+                                            {{productdetails.quantity}}
+                                        </span></span>
+                                </div>
+
+                                <div class="reviews_details_product">
+                                    <div class="bizweb-product-reviews-badge" data-id="16164456"></div>
+                                </div>
+
+                                <div class="price-box" itemprop="offers" itemscope
+                                    itemtype="http://schema.org/Offer">
+
+                                    <div class="special-price"><span
+                                            class="price product-price">{{productdetails.price}} </span>
+                                        <meta itemprop="price" content="2900000">
+                                        <meta itemprop="priceCurrency" content="VND">
+                                    </div> <!-- Giá -->
+                                    <link itemprop="availability" href="http://schema.org/InStock" />
+                                    <meta itemprop="url" content="https://nd-noi-that.mysapo.net/san-pham-14">
+                                </div>
+                                <div class="product-summary product_description margin-bottom-15">
+                                    <div class="rte description">
+
+                                        Phòng ngủ có vai trò quan trọng đối với mỗi cá nhân để định hình cá tính
+                                        và quan điểm sống của chủ nhân khi nghỉ ngơi mỗi ngày để lấy lại năng
+                                        lượng mỗi ngày hứng khởi vừa có không gian nghiên cứu và sáng tạo cho
+                                        học tập...
+
+                                    </div>
+                                </div>
+
+                                <div class="form-product">
+
+                                    <div class="box-variant clearfix ">
+
+                                        <input type="hidden" name="variantId" value="28554828" />
+
+                                    </div>
+                                    <div class="form-group form_button_details ">
+
+                                        <div class="qty-nd clearfix">
+                                            <label>Số lượng:</label>
+                                            <div
+                                                class="custom input_number_product custom-btn-number form-control">
+                                                <button class="btn_num num_2 button button_qty"
+                                                    onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;"
+                                                    type="button">+</button>
+                                                <button class="btn_num num_1 button button_qty"
+                                                    onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro &gt; 1 ) result.value--;return false;"
+                                                    type="button">-</button>
+                                                <input type="text" maxlength="3" id="qtym" name="quantity"
+                                                    value="1" class="form-control prd_quantity"
+                                                    onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                                    onchange="if(this.value == 0)this.value=1;">
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-mua-nd clearfix">
+
+                                            <button type="submit"
+                                                class="btn btn-lg  btn-cart button_cart_buy_enable add_to_cart btn_buy">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+                            <aside class="aside-item clearfix">
+                                <div class="right_module">
+                                    <div class="module_service_details">
+                                        <div class="wrap_module_service">
+                                            <div class="item_service">
+                                                <div class="wrap_item_">
+                                                    <div class="content_service">
+                                                        <p>Giao hàng miễn phí</p>
+                                                        <span>Đối với các đơn hàng trên 2.000.000 đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item_service">
+                                                <div class="wrap_item_">
+                                                    <div class="content_service">
+                                                        <p>Tích điểm đổi quà</p>
+                                                        <span>Cam kết chính hàng chính hãng 100%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item_service">
+                                                <div class="wrap_item_">
+                                                    <div class="content_service">
+                                                        <p>BẢO HÀNH TOÀN QUỐC</p>
+                                                        <span>Gọi ngay hotline để được tư vấn</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item_service">
+                                                <div class="wrap_item_">
+                                                    <div class="content_service">
+                                                        <p>Tư vấn 24/7</p>
+                                                        <span>Giảm giá từ 10% - 30% các ngày cuối tuần</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </aside>
+                        </div>
+                    </form>
+                    <!-- Tab -->
+                    <div class="tab_width_full">
+                        <div class="row xs-margin-top-15">
+
+                            <div id="tab_ord" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                <!-- Nav tabs -->
+                                <div class="product-tab e-tabs not-dqtab">
+                                    <span class="border-dashed-tab"></span>
+                                    <ul class="tabs tabs-title clearfix">
+
+                                        <li class="tab-link" data-tab="tab-1">
+                                            <div class="h3"><span>Mô tả</span></div>
+                                        </li>
+
+
+                                        <li class="tab-link" data-tab="tab-2">
+                                            <div class="h3"><span>Tab tùy chỉnh</span></div>
+                                        </li>
+
+
+                                    </ul>
+                                    <div class="tab-float">
+
+                                        <div id="tab-1" class="tab-content content_extab">
+                                            <div class="rte">
+
+                                                <p>Phòng ngủ có vai trò quan trọng đối với mỗi cá nhân để định
+                                                    hình cá tính và quan điểm sống của chủ nhân khi nghỉ ngơi
+                                                    mỗi ngày để lấy lại năng lượng mỗi ngày hứng khởi vừa có
+                                                    không gian nghiên cứu và sáng tạo cho học tập hay công việc
+                                                    của mình. Chính vì thế mà phòng ngủ được chú ý thiết kế đầy
+                                                    đủ tiện nghi và hiện đại cho sinh hoạt tiện nghi, và ngủ
+                                                    những giấc ngủ an lành.</p>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div id="tab-2" class="tab-content content_extab">
+                                            <div class="rte">
+
+                                                Nội dung tùy chỉnh viết ở đây
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="related_module margin-bottom-30">
+                                    <div class="title_module_child a-left">
+                                        <h2>
+                                            <a href="/danh-muc-tao-dau-tien" title="Sản phẩm cùng loại">
+                                                Sản phẩm cùng loại
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="wrap_owl">
+                                        {% for categories in categoryall%}
+                                            <div class="item_product_main item_relate clearfix">
+                                                <div class="product-box product-item-small clearfix">
+                                                    <div class="product-thumbnail">
+                                                        <a href="" title="Sofa thư giãn Rouen">
+                                                            <img class="lazy img-responsive center-block"
+                                                                src="{{categories.image.url}}"
+                                                                data-src="{{categories.image.url}}"
+                                                                alt="{{categories.name}}" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-content">
+                                                        <h3 class="product-name">
+                                                            <a href="/sofa-thu-gian-rouen"
+                                                                title="Sofa thư giãn Rouen">
+                                                                {{categories.name}}
+                                                            </a>
+                                                        </h3>
+                                                        <div class="product-item-price price-box">
+
+
+                                                            <strong>
+                                                                {{categories.price}}
+                                                            </strong>
+
+
+                                                        </div>
+                                                        <div class="product-summary product_description hidden-sm">
+
+                                                            Sofa thư giãn Rouen được khoác lên mình màu Tobaco...
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor%}
+                                        
+                                        <div class="relate-mores text-center"><a href="/danh-muc-tao-dau-tien"
+                                                title="Xem thêm">Xem thêm</a></div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Endtab -->
+
+
+                    <div class="module-product-quantam margin-bottom-30">
+                        <div class="title_module_main">
+                            <h2>
+                                <a href="san-pham-noi-bat" title="Có thể bạn quan tâm">
+                                    <span class="t1">Có thể</span>
+                                    <span class="t2">bạn quan tâm</span>
+                                </a>
+                            </h2>
+                        </div>
+
+                        <div class="content">
+
+                            <div class="owl_product_ owl-carousel" data-nav="true" data-margin="15"
+                                data-lg-items="4" data-md-items="4" data-height="false" data-xs-items="2"
+                                data-xss-items="2" data-sm-items="3">
+
+                                <div class="item">
+                                    <div class="product-box product-item-main">
+                                        <div class="sale-flash"><span>-
+                                                33%
+                                            </span></div>
+                                        <div class="product-thumbnail">
+                                            <a href="/san-pham-15" title="Ghế phòng khách ND01">
+                                                <img class="lazy img-responsive center-block"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    data-src="//bizweb.dktcdn.net/thumb/large/100/369/704/products/29.jpg?v=1572418523850"
+                                                    alt="Ghế phòng khách ND01" />
+                                            </a>
+                                            <div class="product-action hidden-md hidden-sm hidden-xs clearfix">
+                                                <form action="/cart/add" method="post"
+                                                    class="variants form-nut-grid"
+                                                    data-id="product-actions-16164458"
+                                                    enctype="multipart/form-data">
+                                                    <div class="group_action">
+
+                                                        <input type="hidden" name="variantId"
+                                                            value="28554830" />
+                                                        <button
+                                                            class="btn-buy btn-cart btn btn-gray   left-to add_to_cart"
+                                                            title="Thêm vào giỏ hàng">
+                                                            <span>
+                                                                Thêm vào giỏ hàng
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                        <h3 class="product-name">
+                                            <a href="/san-pham-15" title="Ghế phòng khách ND01">
+                                                Ghế phòng khách ND01
+                                            </a>
+                                        </h3>
+
+                                        <div class="product-item-price price-box">
+                                            <strong>
+                                                2.000.000₫
+                                            </strong>
+                                            <span>3.000.000₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

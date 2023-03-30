@@ -1,0 +1,220 @@
+{% extends "page/base.html" %}
+
+{%block content%}
+
+    <section class="bread-crumb">
+        <span class="crumb-border"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 a-left">
+                    <ul class="breadcrumb">
+                        <li class="home">
+                            <a itemprop="url" href="/"><span title="Trang chủ">Trang chủ</span></a>
+                            <span class="mr_lr">&nbsp;/&nbsp;</span>
+                        </li>
+                        <li><strong><span>Giỏ hàng</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title_head left after">
+                        <span class="padding__">Giỏ hàng của bạn</span>
+                    </h1>
+                    <div class="header-cart title_cart_pc hidden-sm hidden-xs">
+                        <section class="main-cart-page main-container col1-layout">
+                            <div class="main container hidden-xs hidden-sm">
+
+                                <div class="col-main cart_desktop_page cart-page">
+                                    <div class="cart page_cart hidden-xs">
+                                        <form action="/cart" method="post" novalidate="" class="margin-bottom-0">
+                                            <div class="bg-scroll">
+                                                <div class="cart-thead">
+                                                    <div style="width: 18%" class="a-center">Ảnh sản phẩm</div>
+                                                    <div style="width: 32%" class="a-center">Tên sản phẩm</div>
+                                                    <div style="width: 17%" class="a-center"><span class="nobr">Đơn
+                                                            giá</span></div>
+                                                    <div style="width: 14%" class="a-center">Số lượng</div>
+                                                    <div style="width: 14%" class="a-center">Thành tiền</div>
+                                                    <div style="width: 5%" class="a-center">Xoá</div>
+                                                </div>
+                                                <div class="cart-tbody">
+                                                    <div class="item-cart productid-28554828">
+                                                        <div style="width: 18%" class="image"><a
+                                                                class="product-image"
+                                                                title="Nội thất phòng ngủ ND01"
+                                                                href="/san-pham-14"><img width="75" height="auto"
+                                                                    alt="Nội thất phòng ngủ ND01"
+                                                                    src="https://bizweb.dktcdn.net/thumb/compact/100/369/704/products/28.jpg"></a>
+                                                        </div>
+                                                        <div style="width: 32%" class="a-center">
+                                                            <h3 class="product-name"> <a href="/san-pham-14"
+                                                                    title="Nội thất phòng ngủ ND01">Nội thất phòng
+                                                                    ngủ ND01</a> </h3><span
+                                                                class="variant-title hidden">Default Title</span>
+                                                        </div>
+                                                        <div style="width: 17%" class="a-center"><span
+                                                                class="item-price"> <span
+                                                                    class="price">2.900.000₫</span></span></div>
+                                                        <div style="width: 14%" class="a-center">
+                                                            <div class="input_qty_pr"><input class="variantID"
+                                                                    type="hidden" name="variantId"
+                                                                    value="28554828"><input type="text"
+                                                                    maxlength="12" readonly="" min="0"
+                                                                    class="check_number_here input-text number-sidebar input_pop input_pop qtyItem28554828"
+                                                                    id="qtyItem28554828" name="Lines" size="4"
+                                                                    value="2"><button
+                                                                    onclick="var result = document.getElementById('qtyItem28554828'); var qtyItem28554828 = result.value; if( !isNaN( qtyItem28554828 )) result.value++;return false;"
+                                                                    class="increase_pop items-count btn-plus"
+                                                                    type="button">+</button><button
+                                                                    onclick="var result = document.getElementById('qtyItem28554828'); var qtyItem28554828 = result.value; if( !isNaN( qtyItem28554828 ) &amp;&amp; qtyItem28554828 > 1 ) result.value--;return false;"
+                                                                    class="reduced_pop items-count btn-minus"
+                                                                    type="button">-</button></div>
+                                                        </div>
+                                                        <div style="width: 14%" class="a-center"><span
+                                                                class="cart-price"> <span
+                                                                    class="price">5.800.000₫</span> </span></div>
+                                                        <div style="width: 5%" class="a-center"><a
+                                                                class="remove-itemx remove-item-cart" title="Xóa"
+                                                                href="javascript:;" data-id="28554828"><span><i
+                                                                        class="fa fa-trash-o"></i></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="row margin-top-20  margin-bottom-40">
+                                            <div class="col-lg-7 col-md-7">
+                                                <div class="form-cart-button">
+                                                    <div class=""><a href="/" class="form-cart-continue">Tiếp tục
+                                                            mua hàng</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 bg_cart shopping-cart-table-total">
+                                                <div class="table-total">
+                                                    <table class="table ">
+                                                        <tbody>
+                                                            <tr class="hidden">
+                                                                <td>Tiền vận chuyển</td>
+                                                                <td class="txt-right a-right">Tính khi thanh toán
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="total-text">Tổng tiền thanh toán</td>
+                                                                <td
+                                                                    class="1 txt-right totals_price price_end a-right">
+                                                                    5.800.000₫</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div><a onclick="window.location.href='/checkout'"
+                                                    class="btn-checkout-cart" title="Tiến hành thanh toán">Tiến hành
+                                                    thanh toán</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart-mobile hidden-md hidden-lg container">
+                                <form action="/cart" method="post" novalidate="" class="margin-bottom-0">
+                                    <div class="title_cart_mobile">
+
+                                    </div>
+
+                                    <div class="header-cart-content" style="background:#fff;">
+                                        <div class="cart_page_mobile content-product-list">
+                                            <div class="item-product item-mobile-cart item productid-28554828 ">
+                                                <div class="item-product-cart-mobile"><a href="/san-pham-14"> </a><a
+                                                        class="product-images1" href="/san-pham-14"
+                                                        title="Nội thất phòng ngủ ND01"><img width="80" height="150"
+                                                            alt="Nội thất phòng ngủ ND01"
+                                                            src="https://bizweb.dktcdn.net/thumb/small/100/369/704/products/28.jpg"></a>
+                                                </div>
+                                                <div class="title-product-cart-mobile">
+                                                    <h3><a class="" href="/san-pham-14"
+                                                            title="Nội thất phòng ngủ ND01">Nội thất phòng ngủ
+                                                            ND01</a></h3>
+                                                    <p>Giá: <span>2.900.000₫</span></p>
+                                                </div>
+                                                <div class="select-item-qty-mobile">
+                                                    <div class="txt_center in_put check_"><input class="variantID"
+                                                            type="hidden" name="variantId" value="28554828"><button
+                                                            onclick="var result = document.getElementById('qtyMobile28554828'); var qtyMobile28554828 = result.value; if( !isNaN( qtyMobile28554828 ) &amp;&amp; qtyMobile28554828 > 0 ) result.value--;return false;"
+                                                            class="reduced items-count btn-minus"
+                                                            type="button">–</button><input type="number"
+                                                            maxlength="12" min="1" readonly=""
+                                                            class="check_number_here input-text mobile_input number-sidebar qtyMobile28554828"
+                                                            id="qtyMobile28554828" name="Lines" size="4"
+                                                            value="2"><button
+                                                            onclick="var result = document.getElementById('qtyMobile28554828'); var qtyMobile28554828 = result.value; if( !isNaN( qtyMobile28554828 )) result.value++;return false;"
+                                                            class="increase items-count btn-plus"
+                                                            type="button">+</button></div><a
+                                                        class="button remove-item remove-item-cart"
+                                                        href="javascript:;" data-id="28554828">Xoá</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-cart-price" style="">
+                                            <div class="title-cart a-center"><span
+                                                    class="total_mobile a-center">Tổng tiền: <span
+                                                        class=" totals_price_mobile">5.800.000₫</span><span></span></span>
+                                            </div>
+                                            <div class="checkout"><button class="btn-proceed-checkout-mobile"
+                                                    title="Tiến hành thanh toán" type="button"
+                                                    onclick="window.location.href='/checkout'"><span>Tiến hành thanh
+                                                        toán</span></button><button class="btn btn-white contin"
+                                                    title="Tiếp tục mua hàng" type="button"
+                                                    onclick="window.location.href='/collections/all'"><span>Tiếp tục
+                                                        mua hàng</span></button></div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-cart-page main-container col1-layout">
+        <div class="main container hidden-xs hidden-sm">
+
+            <div class="col-main cart_desktop_page cart-page">
+
+            </div>
+
+        </div>
+        <div class="cart-mobile hidden-md hidden-lg container">
+            <form action=""  novalidate="" class="margin-bottom-0">
+                <div class="title_cart_mobile">
+
+                </div>
+
+                <div class="header-cart-content" style="background:#fff;">
+                    <div id="popup-cart" class="modal fade" role="dialog">
+                        <div id="popup-cart-desktop" class="clearfix">
+                            <div class="title-popup-cart">
+                                <img src="//bizweb.dktcdn.net/100/369/704/themes/741072/assets/ico_check_.png?1677115735837"
+                                    alt="ND Nội Thất" /> <span class="your_product">Bạn đã thêm [<span
+                                        class="cart-popup-name"></span>] vào giỏ hàng thành công ! </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+{%endblock %}
